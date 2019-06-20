@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us | Buoyant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700,800" rel="stylesheet">
+  <style>
+      
+    </style>
+    
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand"><img src="./images/logo.png" alt="Buoyant"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="contact-us.html" class="active">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="mobOverlay"></div>
+  <div id="content">
+      <div class="leftCont">
+          <img src="./images/contactus.jpg" alt="" class="pinImg">
+      </div>
+      <div class="rightCont">
+                    <form name="contactus" id="contactus" method="POST" action="contact.php">
+                        <div class="tt">Say Hello</div>
+                        <div id="ctsuccess"></div>
+                        <div class="formFeilds">
+                          <div class="formgroup">
+                            <label for="ctname">Name</label>
+                            <input type="text" class="formcontrol" id="ctname" name="ctname">
+                          </div>
+                          <div class="formgroup">
+                            <label for="ctemail">Email ID</label>
+                            <input type="email" class="formcontrol" id="ctemail" name="ctemail">
+                          </div>
+                          <div class="formgroup">
+                            <label for="ctmessage">Your Message</label>
+                            <input type="text" class="formcontrol" id="ctmessage" name="ctmessage">
+                          </div>
+                          <button type="button" class="button" id="send">Submit</button>
+                        </div>
+                    </form>
+      </div>
+      <div class="clear"></div>
+      <div class="copy1">Copyright © 2019 Buoyant. All rights reserved. <br><a href="privacy-policy.html">Privacy policy</a></div>
+  </div>
+
+  
+
+
+<script src="./js/jquery-1.11.1.js"></script>
+<script src="./js/jquery.scrollify.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

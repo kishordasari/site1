@@ -1,0 +1,129 @@
+*{margin:0;padding:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+html,body{height:100%}
+body{font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.8;color:#727272}
+body.noscroll{overflow:hidden}
+.container1{max-width:1050px;margin:0 auto}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+img{max-width:100%}
+p{margin-bottom:20px}
+h1{margin:0;padding:0}
+h1.sub{font-size:35px;padding:20px 0 30px}
+h2{font-size:18px;font-weight:700;padding-top:20px}
+.navbar-header{padding:30px 0 0 60px}
+.navbar-default{background-color:transparent}
+.navbar-brand{height:auto;float:none;padding:0;display:block;width:165px}
+.navbar-right{margin-right:48px;margin-top:40px}
+.navbar-toggle{border:0}
+.navbar-collapse{border-top:none}
+.navbar-toggle .icon-bar{transition:.4s}
+.change .icon-bar:nth-child(1){-webkit-transform:rotate(-45deg) translate(-2px,1px);transform:rotate(-45deg) translate(-2px,1px)}
+.change .icon-bar:nth-child(2){opacity:0}
+.change .icon-bar:nth-child(3){-webkit-transform:rotate(45deg) translate(-7px,-7px);transform:rotate(45deg) translate(-7px,-7px)}
+#main{height:100%;position:relative}
+.middleText{font-size:40px;font-weight:500;line-height:normal;text-align:center;padding:150px 0;background:#fff;position:absolute;width:100%;top:45%;left:0;transform:translateY(-45%);-moz-transform:translateY(-45%);-webkit-transform:translateY(-45%);z-index:10;display:none}
+.container-fluid{padding-top:70px;padding-bottom:70px}
+.navbar-default .navbar-nav>li>a{color:#727272}
+.navbar{padding-top:15px;padding-bottom:15px;border:0;border-radius:0;margin-bottom:0;font-size:18px;font-weight:700;position:fixed;width:100%;background:#fff;z-index:999}
+.navbar-nav li a:hover,.navbar-nav li a.active{color:#2ab5cd!important}
+.scroll-downs{position:fixed;z-index:100;bottom:25%;left:48%;width:34px;height:55px;cursor:pointer;opacity:0;transition:ease-out all .5s}
+.scroll-downs.anim{opacity:1;bottom:15%}
+.mousey{width:3px;padding:10px 15px;height:35px;border:3px solid #000;border-radius:25px;opacity:.4;box-sizing:content-box}
+.scroller{width:3px;height:10px;border-radius:25%;background-color:#000;animation-name:scroll;animation-duration:2.2s;animation-timing-function:cubic-bezier(.15,.41,.69,.94)}
+.scroll-downs .pos{width:20px;opacity:.7;position:absolute;left:9px;bottom:-30px}
+
+@-webkit-keyframes bounce {
+	0%,100%{-webkit-transform:translateY(0)}
+	50%{-webkit-transform:translateY(-5px)}
+}
+@keyframes bounce {
+	0%,100%{transform:translateY(0)}
+	50%{transform:translateY(-5px)}
+}
+.bounce{-webkit-animation-name:bounce;animation-name:bounce;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-timing-function:linear;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite}
+#content{height:100vh}
+.content{font-size:33px;overflow:hidden;padding-bottom:50px;position:relative}
+.leftCont{width:55%;float:left;position:relative;height:100vh;background:#EEE}
+.pinImg{position:absolute;bottom:0;left:0;width:100%}
+.rightCont{position:relative;width:40%;float:right;padding:10% 0 0 5%}
+.textScroll{width:538px;font-size:30px;padding:32px 45px;font-weight:400;line-height:normal;letter-spacing:-.1px;border-radius:70px;border-bottom-left-radius:0;box-shadow:10px 12px 34px 0 rgba(90,90,90,0.5);background-color:#fbfbfb;color:#000;transition:ease all .5s}
+.textRot{font-size:30px;position:fixed;z-index:-1;width:35%;top:35%;right:0;transition:ease-in all 1.2s;opacity:0}
+.textRot.fadeIn{opacity:1}
+.textRot span{display:block;font-size:64px;color:#2ab5cd;line-height:1.18}
+.textc1,.textc2,.textc3{position:absolute;transition:ease-in all .5s;opacity:0}
+.container1,.pinContainer{width:100%;height:100vh}
+.quote-container{width:100%;height:100vh;display:flex;flex-flow:column wrap;position:absolute}
+.quote-container blockquote{position:absolute;opacity:0;top:25%;left:10%}
+.textScroll{top:300px}
+.clear{clear:both}
+.clearfix{position:relative;margin-bottom:30px}
+.clearfix::after{content:"";clear:both;display:table}
+.padtp{padding-top:135px}
+.imageCont{width:50%;position:relative}
+.textCont{width:40%;position:absolute;text-align:left;top:50%;transform:translateY(-50%);font-size:30px;font-weight:400;letter-spacing:-.1px;line-height:normal;color:#606060}
+.textCont.rt{right:5%}
+.textCont.lt{left:0}
+.textCont span{display:block;font-size:16px;font-weight:500;letter-spacing:-.1px;color:#9b9b9b;padding-top:20px}
+.fl{float:left}
+.fr{float:right}
+form{width:80%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.tt{font-size:40px;font-weight:500;letter-spacing:-.1px;color:#727272;padding:30px 0 20px}
+.formgroup{position:relative;margin-bottom:45px}
+.formgroup label{font-size:16px;font-weight:500;letter-spacing:-.1px;color:#9b9b9b;position:absolute;left:0;top:10px;z-index:10;transition:font-size 150ms ease-out,-webkit-transform 150ms ease-out;transition:transform 150ms ease-out,font-size 150ms ease-out;transition:transform 150ms ease-out,font-size 150ms ease-out,-webkit-transform 150ms ease-out}
+.focused label{-webkit-transform:translateY(-125%);transform:translateY(-125%);font-size:.75em}
+input.formcontrol{width:100%;padding:0 0 10px;border:0;display:block;border-bottom:solid 1px #000;font-size:20px;font-weight:500;letter-spacing:-.1px;color:#727272;margin-bottom:30px}
+input.formcontrol:focus{outline:none}
+.button{width:140px;border-radius:26px;box-shadow:0 2px 4px 2px rgba(206,206,206,0.5);background-image:linear-gradient(250deg,#54dbe8,#2ab5cd);font-size:20px;font-weight:600;text-align:center;color:#fff;border:0;outline:none;padding:5px 0}
+.red{border:solid 1px #ff5959;border-radius:2px;color:#fe5858;text-align:center;padding:5px 0;margin-bottom:20px}
+.green{border:solid 1px #37b000;border-radius:2px;color:#37b000;text-align:center;padding:5px 0;margin-bottom:20px}
+footer{position:relative;text-align:center;height:100%;padding-top:100px;background-color:#fff}
+footer .pb{position:fixed;width:100%;left:0}
+footer p{font-size:26px;font-weight:600;top:12%;z-index:2;opacity:0;transition:ease all .2s}
+p.fd{opacity:1}
+.icons{padding:50px 0 160px;text-align:center;top:18%;z-index:2}
+.icons img{margin:0 10px;transition:all .2s ease-in-out;transform:scale(0)}
+.icons.zoom img{transform:scale(1)}
+.textarea{bottom:25%;text-align:center;position:absolute;width:100%;left:0;transition:all .5s ease-in;opacity:0;background: #fff;z-index: 1000;}
+.textarea.op{opacity:1}
+.text1{font-size:35px}
+.text2{font-family:'Exo 2',sans-serif;font-size:52px;font-weight:700;color:#2ab5cd;text-transform:uppercase}
+.copy{position:absolute;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;bottom:18%;width:100%;left:0;font-size:14px; padding: 0px 15px}
+.copy1{position:relative;width:100%;font-size:14px;text-align:center;padding:30px 0}
+.mobOverlay{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:100;display:none}
+.mobOverlay.show{display:block}
+.hide{display:none;}
+@media only screen and (max-width: 780px) {
+	.navbar-right{margin-top:20px}
+	.navbar-header{padding:15px 0 0 25px}
+	.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#fff}
+	.scroll-downs{left:48%}
+	.middleText{padding:150px 0;width:100%}
+	.textRot{width:auto;left:0;top:78%;text-align:center;background:#fff;padding-bottom:70%}
+	.textRot span{width:100%}
+	.textarea{bottom:30%}
+	.text1{font-size:25px;line-height:30px;margin-bottom:30px;padding:0 40px}
+	.text2{font-size:35px;line-height:45px;padding:0 20px}
+}
+@media only screen and (max-width: 680px) {
+	h1.sub{font-size:26px}
+	.padtp{padding-top:85px}
+	.middleText{font-size:26px;padding:150px 50px;width:auto}
+	.scroll-downs{left:44%}
+	.navbar-brand{width:125px}
+	.textRot{width:auto;left:0;top:78%;font-size:18px;text-align:center;background:#fff;padding:0 0 70%}
+	.leftCont{width:100%;height:300px}
+	.rightCont{width:100%;padding:0}
+	.rightCont form{padding:0 20px 30px;width:100%}
+	.button{display:block;margin:0 auto}
+	.tt{font-size:30px}
+	.textRot span{width:100%;font-size:32px}
+	.imageCont{width:100%;float:none}
+	.textCont{width:100%;position:relative;font-size:20px;top:inherit;transform:translateY(0%);padding-top:15px}
+	.textCont span{padding-top:10px}
+	.clearfix{margin-bottom:40px}
+	.textCont.rt{right:0}
+	.textCont.lt{left:0}
+	footer p{top:8%;font-size:18px}
+	.icons{padding:0 0 160px}
+	.icons img{max-width:58px}
+}
